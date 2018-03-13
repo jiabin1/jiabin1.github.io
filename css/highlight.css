@@ -1,94 +1,164 @@
-/**
- * Tomorrow
- * https://raw.githubusercontent.com/isagalaev/highlight.js/master/src/styles/tomorrow.css
- */
-
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-    color: #8e908c;
+.article-content pre,
+.article-content .highlight {
+  background: #fff;
+  margin: 1.5em 0;
+  padding: 15px 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ccc;
+  overflow: hidden;
+  border-radius: 5px;
+  color: #ccc;
 }
-
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-    color: #c82829;
+.article-content .highlight .gutter pre,
+.article-content .gist .gist-file .gist-data .line-numbers {
+  color: #666;
+  font-size: 0.85em;
 }
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-    color: #f5871f;
+.article-content pre,
+.article-content code {
+  font-family: Courier New, Courier, monospace;
+  font-weight: bold;
 }
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-    color: #eab700;
+.article-content code {
+  background: #fff;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
 }
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-    color: #718c00;
+.article-content pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
 }
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-    color: #4271ae;
+.article-content .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
 }
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-    color: #8959a8;
+.article-content .highlight table {
+  margin: 0;
+  width: auto;
 }
-
-.hljs {
-    display: block;
-    overflow-x: auto;
-    /*background: white;*/
-    color: #4d4d4c;
-    padding: 0.5em;
+.article-content .highlight td {
+  border: none;
+  padding: 0;
 }
-
-.hljs-emphasis {
-    font-style: italic;
+.article-content .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
 }
-
-.hljs-strong {
-    font-weight: bold;
+.article-content .highlight figcaption a {
+  float: right;
 }
-
-/* --- Custom --- */
-
-pre {
-    background: url("./blueprint-dark.png") top center #fafbfc;
-    border-left: 5px solid #558abb;
-    color: #4d4e53;
-    font-family: Consolas,Monaco,'Andale Mono',monospace;
-    font-weight: 400;
-    -moz-tab-size: 4;
-    tab-size: 4;
-    -moz-hyphens: none;
-    -webkit-hyphens: none;
-    -ms-hyphens: none;
-    hyphens: none;
+.article-content .highlight figcaption span {
+  font: monospace;
 }
-
+.article-content .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+.article-content .highlight .line,
+.article-content .highlight .line.marked {
+  background: #fff;
+}
+.article-content .gist {
+  margin: 0 0;
+  border-style: solid;
+  border-color: #808080;
+  border-width: 1px 0;
+  background: #2d2d2d;
+  padding: 15px 0 15px 0;
+}
+.article-content .gist .gist-file {
+  border: none;
+  margin: 0;
+}
+.article-content .gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+.article-content .gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+.article-content .gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+.article-content .gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.article-content .gist .gist-file .gist-meta {
+  background: #2d2d2d;
+  color: #999;
+  font: 0.85em;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 0;
+}
+.article-content .gist .gist-file .gist-meta a {
+  font-weight: normal;
+}
+.article-content .gist .gist-file .gist-meta a:hover {
+  text-decoration: underline;
+}
+pre .comment {
+  color: #999;
+}
+pre .variable,
+pre .attr,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attr {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
+}
