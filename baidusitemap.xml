@@ -4,12 +4,29 @@
 
     
   <url>
-    <loc>http://yoursite.com/2018/03/15/%E7%9C%9F%E6%AD%A3%E7%9A%84hello%20world/</loc>
-    <lastmod>2018-03-15T05:03:54.856Z</lastmod>
+    <loc>http://yoursite.com/2018/04/01/%E5%AD%A6%E4%B9%A0%E6%98%AF%E4%B8%80%E4%B8%AA%E7%86%B5%E5%87%8F%E7%9A%84%E8%BF%87%E7%A8%8B/</loc>
+    <lastmod>2018-04-01T11:51:36.338Z</lastmod>
+    <data>
+        <display>
+        <title>学习是一个熵减的过程</title>
+        <pubTime>2018-04-01T11:50:47.000Z</pubTime>
+        
+        <tag>学习</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2018/04/01/%E7%9C%9F%E6%AD%A3%E7%9A%84hello%20world/</loc>
+    <lastmod>2018-04-01T11:50:05.111Z</lastmod>
     <data>
         <display>
         <title>真正的</title>
-        <pubTime>2018-03-15T05:03:54.856Z</pubTime>
+        <pubTime>2018-04-01T11:50:05.111Z</pubTime>
         
          
            
@@ -18,14 +35,13 @@
     </url>
 
     
-    
   <url>
-    <loc>http://yoursite.com/2018/03/13/hello-world/</loc>
-    <lastmod>2018-03-13T09:54:19.887Z</lastmod>
+    <loc>http://yoursite.com/2018/04/01/hello-world/</loc>
+    <lastmod>2018-04-01T11:50:05.106Z</lastmod>
     <data>
         <display>
         <title>Hello World</title>
-        <pubTime>2018-03-13T09:54:19.887Z</pubTime>
+        <pubTime>2018-04-01T11:50:05.105Z</pubTime>
         
          
            
@@ -33,4 +49,5 @@
     </data>
     </url>
 
+    
 </urlset>
