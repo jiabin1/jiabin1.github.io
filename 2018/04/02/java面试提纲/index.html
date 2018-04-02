@@ -30,7 +30,7 @@
     
     <title>
         
-            归档: 2018 | 
+            java面试提纲 | 
         
         行路人
     </title>
@@ -199,7 +199,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="行路人">
-    <meta name="msapplication-starturl" content="http://yoursite.com/archives/2018/">
+    <meta name="msapplication-starturl" content="http://yoursite.com/2018/04/02/java面试提纲/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="行路人">
@@ -214,13 +214,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="http://yoursite.com/archives/2018/">
+    <meta property="og:url" content="http://yoursite.com/2018/04/02/java面试提纲/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2018 | 行路人">
+    <meta property="og:title" content="java面试提纲 | 行路人">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="各自的朝圣路">
     
 
+    
+        <meta property="article:published_time" content="Mon Apr 02 2018 12:22:43 GMT+0800">
+        <meta property="article:modified_time" content="Mon Apr 02 2018 13:17:07 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -228,12 +231,40 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://yoursite.com/archives/2018/index.html">
+        <link rel="canonical" href="http://yoursite.com/2018/04/02/java面试提纲/index.html">
     
 
     <!-- Structured-data for SEO -->
     
-        
+        <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://yoursite.com/2018/04/02/java面试提纲/index.html",
+    "headline": "java面试提纲",
+    "datePublished": "Mon Apr 02 2018 12:22:43 GMT+0800",
+    "dateModified": "Mon Apr 02 2018 13:17:07 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "加冰",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "你肯定想得到些什么"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "行路人",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "各自的朝圣路",
+}
+</script>
     
 
     <!-- Analytics -->
@@ -264,257 +295,328 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
-    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
 
-    <!-- Normal Post -->
+
+    <!-- Left aligned menu below button -->
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    
+    <button id="post-toc-trigger-btn" class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#小知识点"><span class="post-toc-number">1.</span> <span class="post-toc-text">小知识点</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#集合"><span class="post-toc-number">2.</span> <span class="post-toc-text">集合</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JVM"><span class="post-toc-number">3.</span> <span class="post-toc-text">JVM</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#线程"><span class="post-toc-number">4.</span> <span class="post-toc-text">线程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#设计模式（好处）"><span class="post-toc-number">5.</span> <span class="post-toc-text">设计模式（好处）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#算法"><span class="post-toc-number">6.</span> <span class="post-toc-text">算法</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据库"><span class="post-toc-number">7.</span> <span class="post-toc-text">数据库</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#WEB"><span class="post-toc-number">8.</span> <span class="post-toc-text">WEB</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#数据结构"><span class="post-toc-number">9.</span> <span class="post-toc-text">数据结构</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Linux"><span class="post-toc-number">10.</span> <span class="post-toc-text">Linux</span></a></li></ol>
+    </ul>
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/02/java面试提纲/">java面试提纲</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            小知识点
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/02/java面试提纲/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="加冰's avatar">
-            </div>
-            <div>
-                <strong>加冰</strong>
-                <span>4月 02, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/01/真正的hello world/">真正的</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            你好，世界
-大...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/01/真正的hello world/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="加冰's avatar">
-            </div>
-            <div>
-                <strong>加冰</strong>
-                <span>4月 01, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/01/学习是一个熵减的过程/">学习是一个熵减的过程</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            ...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/01/学习是一个熵减的过程/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="加冰's avatar">
-            </div>
-            <div>
-                <strong>加冰</strong>
-                <span>4月 01, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/04/01/hello-world/">Hello World</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Welcome to Hexo
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/04/01/hello-world/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="加冰's avatar">
-            </div>
-            <div>
-                <strong>加冰</strong>
-                <span>4月 01, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
+        
+    
+            <p class="article-headline-p">
+                java面试提纲
+            </p>
+        </div>
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar">
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>加冰</strong>
+        <span>4月 02, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">在其它设备中阅读本文章</li>
+    
+        <img src="https://pan.baidu.com/share/qrcode?w=246&h=246&url=http://yoursite.com/2018/04/02/java面试提纲/">
+    
+</ul>
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=java面试提纲&url=http://yoursite.com/2018/04/02/java面试提纲/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=java面试提纲&url=http://yoursite.com/2018/04/02/java面试提纲/index.html&via=加冰" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2018/04/02/java面试提纲/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2018/04/02/java面试提纲/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=行路人&title=java面试提纲&summary=各自的朝圣路&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2018/04/02/java面试提纲/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
     
 </div>
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h3 id="小知识点"><a href="#小知识点" class="headerlink" title="小知识点"></a>小知识点</h3><ol>
+<li>九种基本数据类型的大小以及他们的封装类</li>
+<li>equals 与 == 的区别</li>
+<li>Object有哪些公用方法</li>
+<li>Java的四种引用，强弱软虚，用到的场景</li>
+<li>String、StringBuffer与StringBuilder的区别</li>
+<li>Java面向对象的三个特征与含义</li>
+<li>多态，Override和Overload的含义去区别</li>
+<li>java多态的实现原理</li>
+<li>Interface与abstract类的区别</li>
+<li>Static class 与non static class的区别</li>
+<li>Switch能否用string做参数</li>
+<li>Hashcode的作用</li>
+</ol>
+<h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><ol>
+<li>List(ArraryList, LinkedList, Vector) 三者区别联系源码</li>
+<li>Set(HashSet, LinkedHashSet, TreeSet) 基于什么实现，内部数据结构，适用场景，源码</li>
+<li>Map(HashMap, weakHashMap, LinkedHashMap, TreeMap) 内部实现原理，源码适用场景</li>
+<li>Map、Set、List、Queue、Stack的特点与用法</li>
+<li>HashMap和HashTable的区别</li>
+<li>HashMap和ConcurrentHashMap的区别，HashMap的底层源码</li>
+<li>TreeMap、HashMap、LindedHashMap的区别</li>
+<li>Collection包结构，与Collections的区别</li>
+<li>try catch finally，try里有return，finally还执行么</li>
+<li>Excption与Error包结构。OOM你遇到过哪些情况，SOF你遇到过哪些情况</li>
+<li>Java IO流 BIO（字符流字节流的类型及适用场景）NIO （类型、适用场景 三大组件的联系、使用内存情况）</li>
+<li>反射的作用于原理</li>
+<li>泛型常用特点，List<string>能否转为List<object></object></string></li>
+<li>解析XML的几种方式的原理与特点：DOM、SAX、PULL</li>
+<li>Java1.7与1.8新特性</li>
+<li>JNI的使用</li>
+<li>大数据挑一两个逐渐深入理解 （zookeeper kafka redis集群 storm hadoop spark solr cloud）</li>
+</ol>
+<p>###异常</p>
+<h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><ol>
+<li>Java类加载机制</li>
+<li>类加载的五个过程：加载、验证、准备、解析、初始化</li>
+<li>双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader</li>
+<li>分派：静态分派与动态分派</li>
+<li>对象创建方法，对象的内存分配，对象的访问定位</li>
+<li>Java内存模型及分区，每个分区放什么</li>
+<li>堆里的分区：Eden,survival from to, 老年代各自的特点</li>
+<li>垃圾回收算法</li>
+<li>GC的两种判定方法：引用计数与引用链</li>
+<li>GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方，如果让你优化收集方法，有什么思路？</li>
+<li>GC收集器有哪些？CMS收集器与G1收集器的特点</li>
+<li>Minor GC与Full GC触发条件（分别在什么时候发生）？</li>
+<li>常用的内存调试工具：jmap、jstack、jconsole</li>
+<li>JVM优化 （可视化工具使用 日志查询 各项参数设置 四种引用）</li>
+</ol>
+<h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><ol>
+<li>实现多线程的两种方法：Thread与Runable</li>
+<li>多线程同步（写出生产者消费者，读者写者，哲学家就餐的java实现）</li>
+<li>线程同步方法机制（voliate,synchronized,重入锁ReentrantLock，threadlocal），线程间通信（wait,notify）</li>
+<li>锁的等级：方法锁、对象锁、类锁</li>
+<li>ThreadLocal的设计理念与作用</li>
+<li>ThreadPool用法与优势 ThreadPoolExecutor（重载方法的参数、各参数作用、源码）</li>
+<li></li>
+<li><p>wait()和sleep()的区别</p>
+</li>
+<li>####Concurrent并发包</li>
+</ol>
+<ul>
+<li>ConcurrentHashMap的原理源码，与hashmap的区别</li>
+<li>CopyOnWriteArrayList(set) 什么情况下加锁与不加锁，适用场景</li>
+<li>ArrayBlockingQueue（Linked）两者区别，take、put、offer、poll方法原理、源码</li>
+<li>AtomicInteger(long boolean) 功能</li>
+<li>CountDownLatch，CyclicBarrier的功能场景</li>
+<li>FutureTask (Callable) 源码 场景</li>
+<li>ReentantLock 与syn的区别、好处、场景</li>
+<li>Condition 与wait、notify的区别、好处</li>
+<li>Semaphore 好处、场景</li>
+<li>ReentrantReadWriteLock 读写分离的好处、适用场景、源码</li>
+<li>Executors 线程池种类、各个作用、适用场景</li>
+</ul>
+<h3 id="设计模式（好处）"><a href="#设计模式（好处）" class="headerlink" title="设计模式（好处）"></a>设计模式（好处）</h3><ol>
+<li>单例*</li>
+<li>工厂*</li>
+<li>适配器</li>
+<li>责任链</li>
+<li>观察者*</li>
+<li>模仿方法</li>
+<li>策略</li>
+<li>装饰者</li>
+</ol>
+<h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><ol>
+<li>foreach与正常for循环效率对比</li>
+<li>直接插入排序</li>
+<li>二分插入排序</li>
+<li>希尔插入排序</li>
+<li>冒泡排序</li>
+<li>快排</li>
+<li>选择排序</li>
+<li>堆排序</li>
+<li>归并排序</li>
+<li>各种排序的思想 实现复杂度 稳定性 要求手写</li>
+</ol>
+<h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ol>
+<li>三范式</li>
+<li>主从复制 读写分离的原理及实现</li>
+<li>事物类型，使用，可能引起的类型 </li>
+<li>数据引擎(InnoDB MylSAM) 区别联系 锁机制 适用场景</li>
+<li>索引的类型 使用 什么样的字段适合索引</li>
+<li>SQL优化</li>
+</ol>
+<h3 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h3><ol>
+<li>Tomcat 结构 流程 源码</li>
+<li>IO模型（同步、异步、阻塞、非阻塞概念；模型种类、各自特点、适用场景；使用方式）</li>
+<li>Servlet生命周期，三种实现方式</li>
+<li>MyBatis的使用 #$的区别 一级二级缓存</li>
+<li>TCP 三次握手、四次挥手、各种状态、状态改变 与UDP的区别</li>
+</ol>
+<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p>1.二叉树（平衡二叉树，二叉查找树，红黑树，完全二叉树，满二叉树）概念 适用场景 时间复杂度 好坏处<br>1.B树（B+树，B-树）区别联系 适用场景</p>
+<h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><ol>
+<li>常用命令</li>
+<li>管道符</li>
+<li>查看日志相关命令</li>
+<li>CPU使用命令</li>
+</ol>
+        
+    
+
+    
+</div>
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/01/真正的hello world/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
 
                     
                         <!-- Overlay For Active Sidebar -->
