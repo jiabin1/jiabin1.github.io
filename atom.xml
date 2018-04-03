@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-03T09:27:27.988Z</updated>
+  <updated>2018-04-03T11:46:30.119Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>equals 与 == 的区别</title>
+    <link href="http://yoursite.com/2018/04/03/equals-%E4%B8%8E-%E7%9A%84%E5%8C%BA%E5%88%AB/"/>
+    <id>http://yoursite.com/2018/04/03/equals-与-的区别/</id>
+    <published>2018-04-03T11:31:30.000Z</published>
+    <updated>2018-04-03T11:46:30.119Z</updated>
+    
+    <content type="html"><![CDATA[<p>值（基本数据类型）用==</p><p>引用（变量 对象）<br>== 判断 <strong>其引用其引用其引用</strong> 是否指向同一块内存空间，比较本质，即自指，等于，同一个人<br>equals 判断所指向的同一块内存空间上 <em>的值的值的值</em> 是否相同，比较表象，即复制，等大，长得一样</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;值（基本数据类型）用==&lt;/p&gt;
+&lt;p&gt;引用（变量 对象）&lt;br&gt;== 判断 &lt;strong&gt;其引用其引用其引用&lt;/strong&gt; 是否指向同一块内存空间，比较本质，即自指，等于，同一个人&lt;br&gt;equals 判断所指向的同一块内存空间上 &lt;em&gt;的值的值的值&lt;/em&gt; 是
+      
+    
+    </summary>
+    
+    
+      <category term="文科生学Java" scheme="http://yoursite.com/tags/%E6%96%87%E7%A7%91%E7%94%9F%E5%AD%A6Java/"/>
+    
+  </entry>
   
   <entry>
     <title>tomcat服务器搭建</title>
@@ -44,9 +68,9 @@
     <link href="http://yoursite.com/2018/04/03/java%E4%B9%9D%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%85%E8%A3%85%E7%B1%BB/"/>
     <id>http://yoursite.com/2018/04/03/java九种基本数据类型和它们的包装类/</id>
     <published>2018-04-03T05:49:47.000Z</published>
-    <updated>2018-04-03T09:39:39.873Z</updated>
+    <updated>2018-04-03T11:25:18.662Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="基本数据类型大小及默认值"><a href="#基本数据类型大小及默认值" class="headerlink" title="基本数据类型大小及默认值"></a>基本数据类型大小及默认值</h2><table><thead><tr><th style="text-align:center">-</th><th style="text-align:center">基本数据类型</th><th style="text-align:center">大小</th><th style="text-align:center">默认值</th><th style="text-align:center">包装类</th></tr></thead><tbody><tr><td style="text-align:center">整型</td><td style="text-align:center">byte</td><td style="text-align:center">1字节</td><td style="text-align:center">(byte)0</td><td style="text-align:center">Byte</td></tr><tr><td style="text-align:center">整型</td><td style="text-align:center">short</td><td style="text-align:center">2字节</td><td style="text-align:center">(short)0</td><td style="text-align:center">Short</td></tr><tr><td style="text-align:center">整型</td><td style="text-align:center">int</td><td style="text-align:center">4字节</td><td style="text-align:center">0</td><td style="text-align:center">Integer</td></tr><tr><td style="text-align:center">整型</td><td style="text-align:center">long</td><td style="text-align:center">8字节</td><td style="text-align:center">0L</td><td style="text-align:center">Long</td></tr><tr><td style="text-align:center">浮点型</td><td style="text-align:center">float</td><td style="text-align:center">4字节</td><td style="text-align:center">0.0f</td><td style="text-align:center">Float</td></tr><tr><td style="text-align:center">浮点型</td><td style="text-align:center">double</td><td style="text-align:center">8字节</td><td style="text-align:center">0.0d</td><td style="text-align:center">Double</td></tr><tr><td style="text-align:center">-</td><td style="text-align:center">void</td><td style="text-align:center">-</td><td style="text-align:center">-</td><td style="text-align:center">Void</td></tr><tr><td style="text-align:center">-</td><td style="text-align:center">boolean</td><td style="text-align:center">-</td><td style="text-align:center">false</td><td style="text-align:center">Boolean</td></tr><tr><td style="text-align:center">-</td><td style="text-align:center">char</td><td style="text-align:center">2字节</td><td style="text-align:center">/u0000(null)</td><td style="text-align:center">Character</td></tr></tbody></table><h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><table><thead><tr><th style="text-align:left">类目</th><th style="text-align:center">基本数据类型</th><th style="text-align:right">包装类</th></tr></thead><tbody><tr><td style="text-align:left">传递</td><td style="text-align:center">按值</td><td style="text-align:right">按引用</td></tr><tr><td style="text-align:left">存储</td><td style="text-align:center">栈中按值存储创建</td><td style="text-align:right">在堆中放引用</td></tr><tr><td style="text-align:left">声明时</td><td style="text-align:center">值类型自动分配数据空间</td><td style="text-align:right">引用类型仅分配引用空间null<br>需实例化分配数据空间方可赋值<br>数据也是引用，复制仅是传递了引用</td></tr></tbody></table><h2 id="互转"><a href="#互转" class="headerlink" title="互转"></a>互转</h2><p>int —&gt; Integer</p><blockquote><p>int a = 0;<br> Integer b = new Integer(a); //包装类的来由 赋予属性方法</p></blockquote><p>Integer -&gt; int</p><blockquote><p>Integer a = new Integer(0);<br>int b = a.intValue();</p></blockquote><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><ol><li>基本数据类型作占储存空间不变是java具有可移植性的原因之一</li><li>Java向面读对象语言靠近的过渡措施</li><li>常用包装类的方法<blockquote><ol><li>将字符串转成包装类 Integer.valueOf(“1”)</li><li>将字符串转成基本数据类型 Integer.parseInt(“1”)</li></ol></blockquote></li></ol><p><img src="&#39;https://img-blog.csdn.net/20160822231814354&#39;" alt="&#39;包装类&#39;"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="基本数据类型大小及默认值"><a href="#基本数据类型大小及默认值" class="headerlink" title="基本数据类型大小及默认值"></a>基本数据类型大小及默认值</h2><table><thead><tr><th style="text-align:center">-</th><th style="text-align:center">基本数据类型</th><th style="text-align:center">大小</th><th style="text-align:center">默认值</th><th style="text-align:center">包装类</th></tr></thead><tbody><tr><td style="text-align:center">整型</td><td style="text-align:center">byte</td><td style="text-align:center">1字节</td><td style="text-align:center">(byte)0</td><td style="text-align:center">Byte</td></tr><tr><td style="text-align:center">整型</td><td style="text-align:center">short</td><td style="text-align:center">2字节</td><td style="text-align:center">(short)0</td><td style="text-align:center">Short</td></tr><tr><td style="text-align:center">整型</td><td style="text-align:center">int</td><td style="text-align:center">4字节</td><td style="text-align:center">0</td><td style="text-align:center">Integer</td></tr><tr><td style="text-align:center">整型</td><td style="text-align:center">long</td><td style="text-align:center">8字节</td><td style="text-align:center">0L</td><td style="text-align:center">Long</td></tr><tr><td style="text-align:center">浮点型</td><td style="text-align:center">float</td><td style="text-align:center">4字节</td><td style="text-align:center">0.0f</td><td style="text-align:center">Float</td></tr><tr><td style="text-align:center">浮点型</td><td style="text-align:center">double</td><td style="text-align:center">8字节</td><td style="text-align:center">0.0d</td><td style="text-align:center">Double</td></tr><tr><td style="text-align:center">-</td><td style="text-align:center">void</td><td style="text-align:center">-</td><td style="text-align:center">-</td><td style="text-align:center">Void</td></tr><tr><td style="text-align:center">-</td><td style="text-align:center">boolean</td><td style="text-align:center">-</td><td style="text-align:center">false</td><td style="text-align:center">Boolean</td></tr><tr><td style="text-align:center">-</td><td style="text-align:center">char</td><td style="text-align:center">2字节</td><td style="text-align:center">/u0000(null)</td><td style="text-align:center">Character</td></tr></tbody></table><h2 id="对比"><a href="#对比" class="headerlink" title="对比"></a>对比</h2><table><thead><tr><th style="text-align:left">类目</th><th style="text-align:center">基本数据类型</th><th style="text-align:right">包装类</th></tr></thead><tbody><tr><td style="text-align:left">传递</td><td style="text-align:center">按值</td><td style="text-align:right">按引用</td></tr><tr><td style="text-align:left">存储</td><td style="text-align:center">栈中按值存储创建</td><td style="text-align:right">在堆中放引用</td></tr><tr><td style="text-align:left">声明时</td><td style="text-align:center">值类型自动分配数据空间</td><td style="text-align:right">引用类型仅分配引用空间null<br>需实例化分配数据空间方可赋值<br>数据也是引用，复制仅是传递了引用</td></tr></tbody></table><h2 id="互转"><a href="#互转" class="headerlink" title="互转"></a>互转</h2><p>int —&gt; Integer</p><blockquote><p>int a = 0;<br> Integer b = new Integer(a); //包装类的来由 赋予属性方法</p></blockquote><p>Integer -&gt; int</p><blockquote><p>Integer a = new Integer(0);<br>int b = a.intValue();</p></blockquote><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><ol><li>基本数据类型作占储存空间不变是java具有可移植性的原因之一</li><li>Java向面读对象语言靠近的过渡措施</li><li>常用包装类的方法<blockquote><ol><li>将字符串转成包装类 Integer.valueOf(“1”)</li><li>将字符串转成基本数据类型 Integer.parseInt(“1”)</li><li>将包装类拆包成基本数据类型 .intValue()</li></ol></blockquote></li></ol>]]></content>
     
     <summary type="html">
     
