@@ -223,7 +223,7 @@
 
     
         <meta property="article:published_time" content="Tue Apr 03 2018 13:49:47 GMT+0800">
-        <meta property="article:modified_time" content="Tue Apr 03 2018 14:21:38 GMT+0800">
+        <meta property="article:modified_time" content="Tue Apr 03 2018 14:39:33 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -243,7 +243,7 @@
     "mainEntityOfPage": "http://yoursite.com/2018/04/03/java九种基本数据类型和它们的包装类/index.html",
     "headline": "java九种基本数据类型和它们的包装类",
     "datePublished": "Tue Apr 03 2018 13:49:47 GMT+0800",
-    "dateModified": "Tue Apr 03 2018 14:21:38 GMT+0800",
+    "dateModified": "Tue Apr 03 2018 14:39:33 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "加冰",
@@ -322,7 +322,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本数据类型大小及默认值"><span class="post-toc-number">1.</span> <span class="post-toc-text">基本数据类型大小及默认值</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基本数据类型大小及默认值"><span class="post-toc-number">1.</span> <span class="post-toc-text">基本数据类型大小及默认值</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#互转"><span class="post-toc-number">2.</span> <span class="post-toc-text">互转</span></a></li></ol>
     </ul>
 
 
@@ -479,6 +479,7 @@
 <th style="text-align:center">基本数据类型</th>
 <th style="text-align:center">大小</th>
 <th style="text-align:center">默认值</th>
+<th style="text-align:center">包装类</th>
 </tr>
 </thead>
 <tbody>
@@ -487,57 +488,67 @@
 <td style="text-align:center">byte</td>
 <td style="text-align:center">1字节</td>
 <td style="text-align:center">(byte)0</td>
+<td style="text-align:center">Byte</td>
 </tr>
 <tr>
 <td style="text-align:center">整型</td>
 <td style="text-align:center">short</td>
 <td style="text-align:center">2字节</td>
 <td style="text-align:center">(short)0</td>
+<td style="text-align:center">Short</td>
 </tr>
 <tr>
 <td style="text-align:center">整型</td>
 <td style="text-align:center">int</td>
 <td style="text-align:center">4字节</td>
 <td style="text-align:center">0</td>
+<td style="text-align:center">Integer</td>
 </tr>
 <tr>
 <td style="text-align:center">整型</td>
 <td style="text-align:center">long</td>
 <td style="text-align:center">8字节</td>
 <td style="text-align:center">0L</td>
+<td style="text-align:center">Long</td>
 </tr>
 <tr>
 <td style="text-align:center">浮点型</td>
 <td style="text-align:center">float</td>
 <td style="text-align:center">4字节</td>
 <td style="text-align:center">0.0f</td>
+<td style="text-align:center">Float</td>
 </tr>
 <tr>
 <td style="text-align:center">浮点型</td>
 <td style="text-align:center">double</td>
 <td style="text-align:center">8字节</td>
 <td style="text-align:center">0.0d</td>
+<td style="text-align:center">Double</td>
 </tr>
 <tr>
 <td style="text-align:center">-</td>
 <td style="text-align:center">void</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">-</td>
+<td style="text-align:center">Void</td>
 </tr>
 <tr>
 <td style="text-align:center">-</td>
 <td style="text-align:center">boolean</td>
 <td style="text-align:center">-</td>
 <td style="text-align:center">false</td>
+<td style="text-align:center">Boolean</td>
 </tr>
 <tr>
 <td style="text-align:center">-</td>
 <td style="text-align:center">char</td>
 <td style="text-align:center">2字节</td>
 <td style="text-align:center">/u0000(null)</td>
+<td style="text-align:center">Character</td>
 </tr>
 </tbody>
 </table>
+<p>基本数据类型作占储存空间不变是java具有可移植性的原因之一<br>Java向面读对象语言靠近的过渡措施</p>
 <table>
 <thead>
 <tr>
@@ -554,16 +565,24 @@
 </tr>
 <tr>
 <td style="text-align:left">存储</td>
-<td style="text-align:center">栈中按值存储</td>
-<td style="text-align:right"></td>
+<td style="text-align:center">栈中按值存储创建</td>
+<td style="text-align:right">在堆中放引用</td>
 </tr>
 <tr>
 <td style="text-align:left">声明时</td>
 <td style="text-align:center">值类型自动分配数据空间</td>
-<td style="text-align:right">引用类型仅分配引用空间<br>需实例化分配数据空间方可赋值</td>
+<td style="text-align:right">引用类型仅分配引用空间null<br>需实例化分配数据空间方可赋值<br>数据也是引用，复制仅是传递了引用</td>
 </tr>
 </tbody>
 </table>
+<h2 id="互转"><a href="#互转" class="headerlink" title="互转"></a>互转</h2><p>int —&gt; Integer</p>
+<blockquote>
+<p>int a = 0;<br> Integer b = new Integer(a); //包装类的来由 赋予属性方法</p>
+</blockquote>
+<p>Integer -&gt; int</p>
+<blockquote>
+<p>Integer a = new Integer(0);<br>int b = a.intValue();</p>
+</blockquote>
         
     
 
