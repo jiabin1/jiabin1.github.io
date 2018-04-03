@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/04/02/java%E9%9D%A2%E8%AF%95%E6%8F%90%E7%BA%B2/</loc>
+    <lastmod>2018-04-03T09:28:59.232Z</lastmod>
+    <data>
+        <display>
+        <title>java面试提纲</title>
+        <pubTime>2018-04-02T04:22:43.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/04/03/tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2018-04-03T09:27:27.988Z</lastmod>
     <data>
@@ -30,21 +45,6 @@
         
         <tag>文科生学Java</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2018/04/02/java%E9%9D%A2%E8%AF%95%E6%8F%90%E7%BA%B2/</loc>
-    <lastmod>2018-04-03T05:49:17.434Z</lastmod>
-    <data>
-        <display>
-        <title>java面试提纲</title>
-        <pubTime>2018-04-02T04:22:43.000Z</pubTime>
-        
          
            
         </display>
