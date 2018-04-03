@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/04/03/java%E4%B9%9D%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%85%E8%A3%85%E7%B1%BB/</loc>
+    
+    <lastmod>2018-04-03T09:39:39.873Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/04/02/java%E9%9D%A2%E8%AF%95%E6%8F%90%E7%BA%B2/</loc>
     
-    <lastmod>2018-04-03T09:28:59.232Z</lastmod>
+    <lastmod>2018-04-03T09:29:30.312Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://yoursite.com/2018/04/03/tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/</loc>
     
     <lastmod>2018-04-03T09:27:27.988Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/04/03/java%E4%B9%9D%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%85%E8%A3%85%E7%B1%BB/</loc>
-    
-    <lastmod>2018-04-03T06:39:33.180Z</lastmod>
     
   </url>
   
