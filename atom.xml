@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-03T09:20:42.504Z</updated>
+  <updated>2018-04-03T09:27:27.988Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="http://yoursite.com/2018/04/03/tomcat%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%90%AD%E5%BB%BA/"/>
     <id>http://yoursite.com/2018/04/03/tomcat服务器搭建/</id>
     <published>2018-04-03T09:13:07.000Z</published>
-    <updated>2018-04-03T09:20:42.504Z</updated>
+    <updated>2018-04-03T09:27:27.988Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="情况"><a href="#情况" class="headerlink" title="情况"></a>情况</h2><p>通过服务器的IP地址绑定的域名访问服务器，默认直接是80端口与或https加密的443。只要让tomcat监听80端口就能直接通过域名（无端口）的形式<br>访问tomcat下的项目，而tomcat默认以非root用户启动，不能监听1024以下的端口。</p><h2 id="措施"><a href="#措施" class="headerlink" title="措施"></a>措施</h2><ol><li>修改sever.conf文件  </li><li>通过iptables进行端口转发<blockquote><p>sudo iptables -t nat -A PREROUTING -p tcp –dport 80 -j REDIRECT –to-port 8080</p></blockquote></li></ol><p>https协议默认监听8443端口，故</p><blockquote><p>sudo iptables -t nat -A PREROUTING -p tcp –dport 443 -j REDIRECT –to-port 8443</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h2 id="情况"><a href="#情况" class="headerlink" title="情况"></a>情况</h2><p>通过服务器的IP地址绑定的域名访问服务器，默认直接是80端口与或https加密的443.<br>只要让tomcat监听80端口就能直接通过域名（无端口）的形式访问tomcat下的项目，而tomcat默认以非root用户启动，不能监听1024以下的端口。</p><h2 id="措施"><a href="#措施" class="headerlink" title="措施"></a>措施</h2><ol><li>修改sever.conf文件以root用户身份启动</li><li>通过iptables实现端口映射转发（推荐）<blockquote><p>sudo iptables -t nat -A PREROUTING -p tcp –dport 80 -j REDIRECT –to-port 8080</p></blockquote></li></ol><p>https协议默认监听8443端口，故</p><blockquote><p>sudo iptables -t nat -A PREROUTING -p tcp –dport 443 -j REDIRECT –to-port 8443</p></blockquote>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;情况&quot;&gt;&lt;a href=&quot;#情况&quot; class=&quot;headerlink&quot; title=&quot;情况&quot;&gt;&lt;/a&gt;情况&lt;/h2&gt;&lt;p&gt;通过服务器的IP地址绑定的域名访问服务器，默认直接是80端口与或https加密的443。只要让tomcat监听80端口就能直接通过域名（无端
+        &lt;h2 id=&quot;情况&quot;&gt;&lt;a href=&quot;#情况&quot; class=&quot;headerlink&quot; title=&quot;情况&quot;&gt;&lt;/a&gt;情况&lt;/h2&gt;&lt;p&gt;通过服务器的IP地址绑定的域名访问服务器，默认直接是80端口与或https加密的443.&lt;br&gt;只要让tomcat监听80端口就能直接通过域
       
     
     </summary>
