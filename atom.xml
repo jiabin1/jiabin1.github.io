@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-04-02T05:17:07.659Z</updated>
+  <updated>2018-04-03T06:01:36.683Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,43 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>java九种基本数据类型和它们的包装类</title>
+    <link href="http://yoursite.com/2018/04/03/java%E4%B9%9D%E7%A7%8D%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%AE%83%E4%BB%AC%E7%9A%84%E5%8C%85%E8%A3%85%E7%B1%BB/"/>
+    <id>http://yoursite.com/2018/04/03/java九种基本数据类型和它们的包装类/</id>
+    <published>2018-04-03T05:49:47.000Z</published>
+    <updated>2018-04-03T06:01:36.683Z</updated>
+    
+    <content type="html"><![CDATA[<p>###大小及默认值<br> 整型</p><ul><li>byte 1字节 (byte)0</li><li>short 2字节 (short)0</li><li>int 4字节 0</li><li><p>long 8字节 0L</p><p>浮点型</p></li><li>float 4字节 0.0f</li><li><p>double 8字节 0.0d</p><p>void -</p><p>boolean - false</p><p>char 2字节 /u0000(null)</p></li></ul><table><thead><tr><th style="text-align:left">类目</th><th style="text-align:center">基本数据类型</th><th style="text-align:right">包装类</th></tr></thead><tbody><tr><td style="text-align:left">传递</td><td style="text-align:center">按值</td><td style="text-align:right">按引用</td></tr></tbody></table>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;###大小及默认值&lt;br&gt; 整型&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;byte 1字节 (byte)0&lt;/li&gt;
+&lt;li&gt;short 2字节 (short)0&lt;/li&gt;
+&lt;li&gt;int 4字节 0&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;long 8字节 0L&lt;/p&gt;
+&lt;p&gt;浮点型&lt;/p&gt;
+&lt;/li
+      
+    
+    </summary>
+    
+    
+      <category term="文科生学Java" scheme="http://yoursite.com/tags/%E6%96%87%E7%A7%91%E7%94%9F%E5%AD%A6Java/"/>
+    
+  </entry>
+  
+  <entry>
     <title>java面试提纲</title>
     <link href="http://yoursite.com/2018/04/02/java%E9%9D%A2%E8%AF%95%E6%8F%90%E7%BA%B2/"/>
     <id>http://yoursite.com/2018/04/02/java面试提纲/</id>
     <published>2018-04-02T04:22:43.000Z</published>
-    <updated>2018-04-02T05:17:07.659Z</updated>
+    <updated>2018-04-03T05:49:17.434Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="小知识点"><a href="#小知识点" class="headerlink" title="小知识点"></a>小知识点</h3><ol><li>九种基本数据类型的大小以及他们的封装类</li><li>equals 与 == 的区别</li><li>Object有哪些公用方法</li><li>Java的四种引用，强弱软虚，用到的场景</li><li>String、StringBuffer与StringBuilder的区别</li><li>Java面向对象的三个特征与含义</li><li>多态，Override和Overload的含义去区别</li><li>java多态的实现原理</li><li>Interface与abstract类的区别</li><li>Static class 与non static class的区别</li><li>Switch能否用string做参数</li><li>Hashcode的作用</li></ol><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><ol><li>List(ArraryList, LinkedList, Vector) 三者区别联系源码</li><li>Set(HashSet, LinkedHashSet, TreeSet) 基于什么实现，内部数据结构，适用场景，源码</li><li>Map(HashMap, weakHashMap, LinkedHashMap, TreeMap) 内部实现原理，源码适用场景</li><li>Map、Set、List、Queue、Stack的特点与用法</li><li>HashMap和HashTable的区别</li><li>HashMap和ConcurrentHashMap的区别，HashMap的底层源码</li><li>TreeMap、HashMap、LindedHashMap的区别</li><li>Collection包结构，与Collections的区别</li><li>try catch finally，try里有return，finally还执行么</li><li>Excption与Error包结构。OOM你遇到过哪些情况，SOF你遇到过哪些情况</li><li>Java IO流 BIO（字符流字节流的类型及适用场景）NIO （类型、适用场景 三大组件的联系、使用内存情况）</li><li>反射的作用于原理</li><li>泛型常用特点，List<string>能否转为List<object></object></string></li><li>解析XML的几种方式的原理与特点：DOM、SAX、PULL</li><li>Java1.7与1.8新特性</li><li>JNI的使用</li><li>大数据挑一两个逐渐深入理解 （zookeeper kafka redis集群 storm hadoop spark solr cloud）</li></ol><p>###异常</p><h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><ol><li>Java类加载机制</li><li>类加载的五个过程：加载、验证、准备、解析、初始化</li><li>双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader</li><li>分派：静态分派与动态分派</li><li>对象创建方法，对象的内存分配，对象的访问定位</li><li>Java内存模型及分区，每个分区放什么</li><li>堆里的分区：Eden,survival from to, 老年代各自的特点</li><li>垃圾回收算法</li><li>GC的两种判定方法：引用计数与引用链</li><li>GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方，如果让你优化收集方法，有什么思路？</li><li>GC收集器有哪些？CMS收集器与G1收集器的特点</li><li>Minor GC与Full GC触发条件（分别在什么时候发生）？</li><li>常用的内存调试工具：jmap、jstack、jconsole</li><li>JVM优化 （可视化工具使用 日志查询 各项参数设置 四种引用）</li></ol><h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><ol><li>实现多线程的两种方法：Thread与Runable</li><li>多线程同步（写出生产者消费者，读者写者，哲学家就餐的java实现）</li><li>线程同步方法机制（voliate,synchronized,重入锁ReentrantLock，threadlocal），线程间通信（wait,notify）</li><li>锁的等级：方法锁、对象锁、类锁</li><li>ThreadLocal的设计理念与作用</li><li>ThreadPool用法与优势 ThreadPoolExecutor（重载方法的参数、各参数作用、源码）</li><li></li><li><p>wait()和sleep()的区别</p></li><li>####Concurrent并发包</li></ol><ul><li>ConcurrentHashMap的原理源码，与hashmap的区别</li><li>CopyOnWriteArrayList(set) 什么情况下加锁与不加锁，适用场景</li><li>ArrayBlockingQueue（Linked）两者区别，take、put、offer、poll方法原理、源码</li><li>AtomicInteger(long boolean) 功能</li><li>CountDownLatch，CyclicBarrier的功能场景</li><li>FutureTask (Callable) 源码 场景</li><li>ReentantLock 与syn的区别、好处、场景</li><li>Condition 与wait、notify的区别、好处</li><li>Semaphore 好处、场景</li><li>ReentrantReadWriteLock 读写分离的好处、适用场景、源码</li><li>Executors 线程池种类、各个作用、适用场景</li></ul><h3 id="设计模式（好处）"><a href="#设计模式（好处）" class="headerlink" title="设计模式（好处）"></a>设计模式（好处）</h3><ol><li>单例*</li><li>工厂*</li><li>适配器</li><li>责任链</li><li>观察者*</li><li>模仿方法</li><li>策略</li><li>装饰者</li></ol><h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><ol><li>foreach与正常for循环效率对比</li><li>直接插入排序</li><li>二分插入排序</li><li>希尔插入排序</li><li>冒泡排序</li><li>快排</li><li>选择排序</li><li>堆排序</li><li>归并排序</li><li>各种排序的思想 实现复杂度 稳定性 要求手写</li></ol><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ol><li>三范式</li><li>主从复制 读写分离的原理及实现</li><li>事物类型，使用，可能引起的类型 </li><li>数据引擎(InnoDB MylSAM) 区别联系 锁机制 适用场景</li><li>索引的类型 使用 什么样的字段适合索引</li><li>SQL优化</li></ol><h3 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h3><ol><li>Tomcat 结构 流程 源码</li><li>IO模型（同步、异步、阻塞、非阻塞概念；模型种类、各自特点、适用场景；使用方式）</li><li>Servlet生命周期，三种实现方式</li><li>MyBatis的使用 #$的区别 一级二级缓存</li><li>TCP 三次握手、四次挥手、各种状态、状态改变 与UDP的区别</li></ol><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p>1.二叉树（平衡二叉树，二叉查找树，红黑树，完全二叉树，满二叉树）概念 适用场景 时间复杂度 好坏处<br>1.B树（B+树，B-树）区别联系 适用场景</p><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><ol><li>常用命令</li><li>管道符</li><li>查看日志相关命令</li><li>CPU使用命令</li></ol>]]></content>
+    <content type="html"><![CDATA[<h3 id="小知识点"><a href="#小知识点" class="headerlink" title="小知识点"></a>小知识点</h3><ol><li>九种基本数据类型的大小以及他们的封装类</li><li>equals 与 == 的区别</li><li>Object有哪些公用方法</li><li>Java的四种引用，强弱软虚，用到的场景</li><li>String、StringBuffer与StringBuilder的区别</li><li>Java面向对象的三个特征与含义</li><li>多态，Override和Overload的含义去区别</li><li>java多态的实现原理</li><li>Interface与abstract类的区别</li><li>Static class 与non static class的区别</li><li>Switch能否用string做参数</li><li>Hashcode的作用</li></ol><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><ol><li>List(ArraryList, LinkedList, Vector) 三者区别联系源码</li><li>Set(HashSet, LinkedHashSet, TreeSet) 基于什么实现，内部数据结构，适用场景，源码</li><li>Map(HashMap, weakHashMap, LinkedHashMap, TreeMap) 内部实现原理，源码适用场景</li><li>Map、Set、List、Queue、Stack的特点与用法</li><li>HashMap和HashTable的区别</li><li>HashMap和ConcurrentHashMap的区别，HashMap的底层源码</li><li>TreeMap、HashMap、LindedHashMap的区别</li><li>Collection包结构，与Collections的区别</li><li>try catch finally，try里有return，finally还执行么</li><li>Excption与Error包结构。OOM你遇到过哪些情况，SOF你遇到过哪些情况</li><li>Java IO流 BIO（字符流字节流的类型及适用场景）NIO （类型、适用场景 三大组件的联系、使用内存情况）</li><li>反射的作用于原理</li><li>泛型常用特点，List<string>能否转为List<object></object></string></li><li>解析XML的几种方式的原理与特点：DOM、SAX、PULL</li><li>Java1.7与1.8新特性</li><li>JNI的使用</li><li>大数据挑一两个逐渐深入理解 （zookeeper kafka redis集群 storm hadoop spark solr cloud）</li></ol><p>###异常</p><h3 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h3><ol><li>Java类加载机制</li><li>类加载的五个过程：加载、验证、准备、解析、初始化</li><li>双亲委派模型：Bootstrap ClassLoader、Extension ClassLoader、ApplicationClassLoader</li><li>分派：静态分派与动态分派</li><li>对象创建方法，对象的内存分配，对象的访问定位</li><li>Java内存模型及分区，每个分区放什么</li><li>堆里的分区：Eden,survival from to, 老年代各自的特点</li><li>垃圾回收算法</li><li>GC的两种判定方法：引用计数与引用链</li><li>GC的三种收集方法：标记清除、标记整理、复制算法的原理与特点，分别用在什么地方，如果让你优化收集方法，有什么思路？</li><li>GC收集器有哪些？CMS收集器与G1收集器的特点</li><li>Minor GC与Full GC触发条件（分别在什么时候发生）？</li><li>常用的内存调试工具：jmap、jstack、jconsole</li><li>JVM优化 （可视化工具使用 日志查询 各项参数设置 四种引用）</li></ol><h3 id="线程"><a href="#线程" class="headerlink" title="线程"></a>线程</h3><ol><li>实现多线程的两种方法：Thread与Runable</li><li>多线程同步（写出生产者消费者，读者写者，哲学家就餐的java实现）</li><li>线程同步方法机制（voliate,synchronized,重入锁ReentrantLock，threadlocal），线程间通信（wait,notify）</li><li>锁的等级：方法锁、对象锁、类锁</li><li>ThreadLocal的设计理念与作用</li><li>ThreadPool用法与优势 ThreadPoolExecutor（重载方法的参数、各参数作用、源码）</li><li>wait()和sleep()的区别</li><li>####Concurrent并发包</li></ol><ul><li>ConcurrentHashMap的原理源码，与hashmap的区别</li><li>CopyOnWriteArrayList(set) 什么情况下加锁与不加锁，适用场景</li><li>ArrayBlockingQueue（Linked）两者区别，take、put、offer、poll方法原理、源码</li><li>AtomicInteger(long boolean) 功能</li><li>CountDownLatch，CyclicBarrier的功能场景</li><li>FutureTask (Callable) 源码 场景</li><li>ReentantLock 与syn的区别、好处、场景</li><li>Condition 与wait、notify的区别、好处</li><li>Semaphore 好处、场景</li><li>ReentrantReadWriteLock 读写分离的好处、适用场景、源码</li><li>Executors 线程池种类、各个作用、适用场景</li></ul><h3 id="设计模式（好处）"><a href="#设计模式（好处）" class="headerlink" title="设计模式（好处）"></a>设计模式（好处）</h3><ol><li>单例*</li><li>工厂*</li><li>适配器</li><li>责任链</li><li>观察者*</li><li>模仿方法</li><li>策略</li><li>装饰者</li></ol><h3 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h3><ol><li>foreach与正常for循环效率对比</li><li>直接插入排序</li><li>二分插入排序</li><li>希尔插入排序</li><li>冒泡排序</li><li>快排</li><li>选择排序</li><li>堆排序</li><li>归并排序</li><li>各种排序的思想 实现复杂度 稳定性 要求手写</li></ol><h3 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h3><ol><li>三范式</li><li>主从复制 读写分离的原理及实现</li><li>事物类型，使用，可能引起的类型 </li><li>数据引擎(InnoDB MylSAM) 区别联系 锁机制 适用场景</li><li>索引的类型 使用 什么样的字段适合索引</li><li>SQL优化</li></ol><h3 id="WEB"><a href="#WEB" class="headerlink" title="WEB"></a>WEB</h3><ol><li>Tomcat 结构 流程 源码</li><li>IO模型（同步、异步、阻塞、非阻塞概念；模型种类、各自特点、适用场景；使用方式）</li><li>Servlet生命周期，三种实现方式</li><li>MyBatis的使用 #$的区别 一级二级缓存</li><li>TCP 三次握手、四次挥手、各种状态、状态改变 与UDP的区别</li></ol><h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><p>1.二叉树（平衡二叉树，二叉查找树，红黑树，完全二叉树，满二叉树）概念 适用场景 时间复杂度 好坏处<br>1.B树（B+树，B-树）区别联系 适用场景</p><h3 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h3><ol><li>常用命令</li><li>管道符</li><li>查看日志相关命令</li><li>CPU使用命令</li></ol>]]></content>
     
     <summary type="html">
     
